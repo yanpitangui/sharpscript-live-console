@@ -1,0 +1,360 @@
+﻿h1, h2, h3, h4, strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+#content h2[id], #content h3[id], #content h4[id] {
+    cursor: pointer;
+}
+
+    #content h2[id]:hover:after, #content h3[id]:hover:after, #content h4[id]:hover:after {
+        content: " \00B6";
+    }
+
+h1 {
+    font-size: 2.25rem;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+.ref {
+    color: #0277BD;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+#content em {
+    font-style: normal;
+    line-height: 1.5em;
+    padding: 2px 5px;
+    margin: 0;
+    background-color: rgba(0,0,0,0.04);
+    color: #c7254e;
+    border-radius: 3px;
+}
+
+#content a em {
+    color: #007bff;
+}
+
+#content a:hover em {
+    color: #0056b3;
+}
+
+#content h2, #content h3, #content h4 {
+    padding: 15px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#content li.active a {
+    font-weight: bold;
+}
+
+#content .doc-links, #content .linq-links, #content .usecase-links {
+    margin-top: 2em;
+    height: 1em;
+}
+
+#topnav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+}
+
+#body {
+    position: relative;
+    z-index: 1;
+    padding: 60px 60px 30px 0;
+    overflow-x: hidden;
+}
+
+#scroll-screen {
+    background: #fff;
+    opacity: .5;
+    z-index: 2;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    left: 220px;
+}
+
+#sidebar {
+    position: fixed;
+    z-index: 10;
+    top: 63px;
+    left: 0;
+    bottom: 0;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+    #sidebar .inner {
+        width: 230px;
+        padding: 10px 0 0 10px;
+    }
+
+    #sidebar ul {
+        list-style-type: none;
+        margin: 0;
+        line-height: 1.5em;
+        padding-left: 0;
+    }
+
+    #sidebar li {
+        padding: .20em 0 .25em .8em;
+        border-left: .2em solid #fff;
+        margin-top: .1em;
+    }
+
+        #sidebar li.active {
+            background: #f8f8f8;
+            border-left: .2em solid #3371e3;
+        }
+
+        #sidebar li h5 {
+            margin: 0.6em 0;
+            font-size: 18px;
+        }
+
+#content {
+    position: relative;
+    padding: 2.2em 0;
+    max-width: 890px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+#sig {
+    position: fixed;
+    bottom: 0;
+    left: 260px; /* 270px + scrollbar */
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: .85rem;
+    line-height: 2rem;
+    z-index: 1;
+}
+
+    #sig p {
+        margin: 0 260px 0 0;
+    }
+
+pre {
+    background: #f8f8f8;
+    padding: 10px;
+    color: #2c3e50;
+}
+
+div.gfm {
+    margin-bottom: 10px;
+}
+
+.live-pages, .live-template {
+    padding: 20px 0 0 0;
+}
+
+    .live-pages .files.count-2 section, .linq-preview .files.count-2 section {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .live-pages textarea, .linq-preview textarea, .live-template textarea {
+        width: 100%;
+        font-family: Monaco, Consolas;
+        font-size: .98rem;
+        line-height: 1.25rem;
+    }
+
+    .live-pages .files h5, .linq-preview .files h5 {
+        color: #4283b9;
+    }
+
+    .live-pages .output, .linq-preview .output, .live-template .output, .expression .output {
+        border: 1px solid #eee;
+        border-radius: 2px;
+        padding: 25px 35px;
+        margin-top: .5em;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        user-select: none;
+        overflow-x: auto;
+        max-height: 750px;
+        width: 98.5%;
+    }
+
+    .linq-preview .output, .live-pages .output, .live-template .output {
+        width: 100%;
+        white-space: pre;
+    }
+
+    .linq-preview.error, .live-template.error {
+        border-color: #a94442;
+    }
+
+    .linq-preview .files section, .live-pages .files section {
+        margin: 0 0 10px 0;
+    }
+
+blockquote {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-left: 0.25rem solid #eceeef;
+    background: #f8f8f8;
+}
+
+    blockquote > p {
+        margin: 0;
+    }
+
+caption {
+    caption-side: top;
+    text-align: center;
+}
+
+.html-sm {
+    font-size: .75rem;
+}
+
+.no-pre, .no-pre .output {
+    white-space: normal;
+}
+
+.html {
+    font-size: .8rem;
+}
+
+.html-md {
+    font-size: .9rem;
+}
+
+    .html-sm .output, .html .output, .html-md .output, .html-lg .output {
+        padding: 0;
+    }
+
+.error .output {
+    padding: 0;
+}
+
+.no-scroll .output {
+    overflow: hidden;
+}
+
+.pre {
+    white-space: pre-wrap;
+}
+
+.alias, .source {
+    float: right;
+    margin: -50px 0 0 0;
+    color: #888;
+}
+
+    .alias:before {
+        content: "alias: "
+    }
+
+#content img {
+    max-width: 890px !important;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 1366px) {
+    #content {
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #sidebar .inner {
+        width: 215px;
+    }
+
+    #content {
+        margin-left: 200px;
+    }
+
+        #content img {
+            max-width: 650px !important;
+        }
+}
+
+@media (max-width: 768px) {
+    #content img {
+        max-width: 450px !important;
+    }
+
+    #body {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 568px) { /* iPhone 5 Landscape */
+    #topnav {
+        position: absolute;
+    }
+
+    #sidebar, #scroll-screen, #sig, #lnk-github {
+        display: none;
+    }
+
+    #content {
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #sidebar .inner {
+        background: #fff;
+        width: 230px;
+        padding: 10px 0 0 10px;
+    }
+
+    #sidebar-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 414px) {
+    #content img {
+        max-width: 414px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    #content img {
+        max-width: 375px !important;
+    }
+}

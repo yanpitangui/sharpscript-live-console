@@ -28,7 +28,7 @@ namespace SharpScript.LiveConsole.Controllers
         {
             try
             {
-                return Ok(await _scriptContext.RenderScriptAsync(script ?? ""));
+                return Ok(await _scriptContext.RenderCodeAsync(script ?? ""));
 
             }
             catch(Exception ex)
